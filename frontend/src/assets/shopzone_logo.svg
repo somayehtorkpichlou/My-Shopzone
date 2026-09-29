@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="88" viewBox="0 0 320 88" role="img" aria-labelledby="title">
+  <title id="title">Shopzone</title>
+  <rect width="320" height="88" fill="none"/>
+  <g transform="translate(8 9)">
+    <path d="M20 29.5h42l-3.8 34A7 7 0 0 1 51.2 70H30.8a7 7 0 0 1-7-6.5l-3.8-34Z" fill="#F2A7A5"/>
+    <path d="M30 30V20C30 11.8 35.4 6 41 6s11 5.8 11 14v10" fill="none" stroke="#374151" stroke-width="5" stroke-linecap="round"/>
+    <path d="M25.5 35.5h31" stroke="#F8D1CC" stroke-width="5" stroke-linecap="round"/>
+    <path d="M33.5 54.8c2.1 2.2 5.5 3.5 9.2 3.5 4.7 0 7.6-1.9 7.6-4.8 0-7.7-15.9-3.6-15.9-13.5 0-5.2 4.8-8.7 11.6-8.7 4 0 7.6 1.2 10 3.5" fill="none" stroke="#FFFFFF" stroke-width="4.8" stroke-linecap="round"/>
+  </g>
+  <text x="91" y="58" fill="#374151" font-family="Inter, Arial, Helvetica, sans-serif" font-size="39" font-weight="800" letter-spacing="0">Shopzone</text>
+  <path d="M91 67h126" stroke="#F2A7A5" stroke-width="5" stroke-linecap="round"/>
+</svg>

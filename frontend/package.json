@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@snapp-store/iranian-banks-react-icons": "^1.1.1",
     "@tailwindcss/vite": "^4.3.2",
     "axios": "^1.20.0",
     "react": "^19.2.7",

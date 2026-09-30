@@ -4,11 +4,9 @@ import CartTotal from "./../components/CartTotal";
 import { ShopContext } from "../context/ShopContext";
 import { toast } from "react-toastify";
 import axios from "axios";
-import {
-  MellatColorIcon,
-  SamanColorIcon,
-  ZarrinpalColorIcon,
-} from "@snapp-store/iranian-banks-react-icons";
+import zarrinpal_icon from "../assets/zarrinpal_icon.svg";
+import mellat_icon from "../assets/mellat_icon.svg";
+import saman_icon from "../assets/saman_icon.svg";
 
 const PlaceOrder = () => {
   const [method, setMethod] = useState("zarinpal");
@@ -63,9 +61,9 @@ const PlaceOrder = () => {
   };
 
   const paymentMethods = [
-    { id: "zarinpal", name: "Zarrinpal", gateway: "zarinpal", Icon: ZarrinpalColorIcon },
-    { id: "mellat", name: "Bank Mellat", gateway: "mellat", Icon: MellatColorIcon },
-    { id: "saman", name: "Saman Bank", gateway: "saman", Icon: SamanColorIcon },
+    { id: "zarinpal", name: "Zarrinpal", gateway: "zarinpal", icon: zarrinpal_icon },
+    { id: "mellat", name: "Bank Mellat", gateway: "mellat", icon: mellat_icon },
+    { id: "saman", name: "Saman Bank", gateway: "saman", icon: saman_icon },
   ];
 
   const createPaymentCode = () => {
@@ -264,7 +262,6 @@ const PlaceOrder = () => {
           {/* ------Payment Method Selection-------- */}
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
             {paymentMethods.map((item) => {
-              const PaymentIcon = item.Icon;
 
               return (
               <button
@@ -279,7 +276,7 @@ const PlaceOrder = () => {
                 aria-pressed={method === item.id}
               >
                 <span className="flex h-10 items-center gap-2 text-sm font-medium text-gray-700">
-                  <PaymentIcon width={34} height={34} />
+                  <img src={item.icon} alt="" className="h-[34px] w-[34px]" />
                   {item.name}
                 </span>
               </button>
